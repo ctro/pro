@@ -30,6 +30,7 @@ brew cask install atom
 brew cask install limechat
 brew cask install torbrowser
 brew cask install gitx
+brew install libdvdcss
 brew cask install handbrake
 brew cask install fantastical
 brew cask install utorrent
