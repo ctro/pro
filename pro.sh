@@ -39,6 +39,7 @@ brew cask install rdio
 brew cask install mailbox
 brew cask install caffeine
 brew cask install licecap
+brew cask install google-earth
 
 echo "Configuring Terminal..."
 # Only use UTF-8 in Terminal.app
