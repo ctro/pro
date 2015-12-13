@@ -1,35 +1,13 @@
-# Get user
-U=whoami
 
 # Vars
-export ATOM_PATH="/Users/$U/Applications"
 export EDITOR="vim"
 export ARCHFLAGS="-arch x86_64"
 
 # Colors
 export CLICOLOR=1
-export LSCOLORS="exfxcxdxbxegedabagacad"
+export LSCOLORS="GxFxCxDxBxegedabagaced"
 alias ls='ls -alhG'
 export GREP_OPTIONS='--color=auto'
 
-# RbENV
-export RBENV_ROOT="/usr/local/var/rbenv"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# OpenSSL
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-
 # Prompt
 export PS1="\w$ "
-
-# Bash Completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
-
-# Key bindings, up/down arrow searches through history
-bind '"\e[A": history-search-backward'
-bind '"\e[B": history-search-forward'
-bind '"\eOA": history-search-backward'
-bind '"\eOB": history-search-forward'
