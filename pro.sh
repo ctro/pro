@@ -7,11 +7,15 @@ brew doctor
 brew update
 
 echo "Installing brews..."
-brew install ruby
 brew install docker
 brew install postgresql
+brew install wget
+brew install chruby
+brew install ruby-install
+brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
 
 echo "Installing casks..."
+brew cask install dockertools
 brew cask install iterm2
 brew cask install google-chrome
 brew cask install lastpass
@@ -22,7 +26,7 @@ brew cask install caffeine
 brew cask install seil   # must manually set this up, i.e. CAPS->esc
 
 echo "Configuring Gems..."
-gem update –system
+gem update --system
 gem install bundler
 
 #echo "Configuring OSX..."
