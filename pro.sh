@@ -8,6 +8,7 @@ brew update
 
 echo "Installing brews..."
 brew install docker
+brew install packer
 brew install postgresql
 brew install wget
 brew install chruby
