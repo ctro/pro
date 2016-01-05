@@ -14,6 +14,7 @@ brew install wget
 brew install chruby
 brew install ruby-install
 brew install --HEAD https://raw.github.com/postmodern/gem_home/master/homebrew/gem_home.rb
+brew install watch
 
 echo "Installing casks..."
 brew cask install dockertools
@@ -25,6 +26,8 @@ brew cask install atom
 brew cask install spectacle
 brew cask install caffeine
 brew cask install seil   # must manually set this up, i.e. CAPS->esc
+brew cask install flycut
+brew cask install itsycal
 
 echo "Configuring Gems..."
 gem update --system
